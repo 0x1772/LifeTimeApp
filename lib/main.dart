@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';,
+import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
@@ -31,7 +31,7 @@ class _InputPageState extends State<InputPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'YAŞAM BEKLENTİSİ',
+          'Stay Healthy',
           style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
@@ -76,6 +76,27 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   child: Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          FontAwesomeIcons.mars,
+                          color: Colors.black,
+                          size: 50,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Men',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
                     margin: EdgeInsets.all(12.0),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
@@ -84,6 +105,27 @@ class _InputPageState extends State<InputPage> {
                 ),
                 Expanded(
                   child: Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          FontAwesomeIcons.venus,
+                          color: Colors.black,
+                          size: 50,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Woman',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
                     margin: EdgeInsets.all(12.0),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
@@ -113,8 +155,7 @@ class ContainerNo1 extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(12.0),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0),
-          color: Colors.white),
+          borderRadius: BorderRadius.circular(10.0), color: Colors.white),
     );
   }
 }
