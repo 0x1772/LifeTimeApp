@@ -8,6 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+          primaryColor: Color.fromARGB(255, 0, 0, 0),
+          accentColor: Colors.red,
+          backgroundColor: Colors.black,
+          scaffoldBackgroundColor: Colors.black,
+          brightness: Brightness.dark),
       home: InputPage(),
     );
   }
@@ -25,7 +31,7 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: Text(
           'YAŞAM BEKLENTİSİ',
-          style: TextStyle(color: Colors.black54),
+          style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
       ),
