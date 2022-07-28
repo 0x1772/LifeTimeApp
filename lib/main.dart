@@ -35,17 +35,45 @@ class _InputPageState extends State<InputPage> {
         ),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text('Form Alanı'),
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(12.0),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.white),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(12.0),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.white),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(12.0),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.white),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(12.0),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.white),
+            ),
+          ),
+        ],
       ),
-      floatingActionButton: Theme(
-        data: ThemeData(
-          accentColor: Color.fromARGB(255, 255, 0, 0),
-        ),
-        child: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.add),
-        ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
     );
   }
