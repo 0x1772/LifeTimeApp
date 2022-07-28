@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';,
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,11 +39,20 @@ class _InputPageState extends State<InputPage> {
       body: Column(
         children: <Widget>[
           Expanded(
-            child: Container(
-              margin: EdgeInsets.all(12.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.white),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ContainerNo1(),
+                ),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(12.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white),
+                  ),
+                ),
+              ],
             ),
           ),
           Expanded(
@@ -62,11 +72,25 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            child: Container(
-              margin: EdgeInsets.all(12.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.white),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(12.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(12.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
@@ -75,6 +99,22 @@ class _InputPageState extends State<InputPage> {
         onPressed: () {},
         child: Icon(Icons.add),
       ),
+    );
+  }
+}
+
+class ContainerNo1 extends StatelessWidget {
+  const ContainerNo1({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0),
+          color: Colors.white),
     );
   }
 }
