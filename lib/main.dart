@@ -38,9 +38,14 @@ class _InputPageState extends State<InputPage> {
       body: Center(
         child: Text('Form Alanı'),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
+      floatingActionButton: Theme(
+        data: ThemeData(
+          accentColor: Color.fromARGB(255, 255, 0, 0),
+        ),
+        child: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
       ),
     );
   }
